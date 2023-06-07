@@ -177,7 +177,7 @@ static ssize_t apa102_write(FAR struct file *filep, FAR const char *buffer,
 
   if ((buflen % 4) != 0)
     {
-      snerr("ERROR: Each LED uses 4 bytes, so (buflen % 4)"
+      snerr("ERROR: Each LED uses 4 bytes, so (buflen %% 4)"
             " needs to be 0!\n");
       return -1;
     }
